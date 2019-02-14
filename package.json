@@ -1,6 +1,6 @@
 {
   "name": "babel-node-ts",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Run babel-node with --extensions ts,tsx by default",
   "bin": "cli.js",
   "files": [
