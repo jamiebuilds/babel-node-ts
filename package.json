@@ -23,5 +23,8 @@
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2"
+  },
+  "dependencies": {
+    "cross-spawn": "^6.0.5"
   }
 }

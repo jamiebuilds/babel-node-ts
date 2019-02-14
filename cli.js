@@ -1,3 +1,8 @@
 #!/usr/bin/env node
-process.argv.push('--extensions', '.js,.jsx,.ts,.tsx')
-require('@babel/node/bin/babel-node.js')
+let crossSpawn = require("cross-spawn")
+let babelNode = require.resolve("@babel/node/bin/babel-node.js")
+let args = process.argv.slice(2);
+
+crossSpawn(babelNode, ["--extensions", ".js,.jsx,.ts,.tsx", ...args], {
+  stdio: "inherit",
+})
