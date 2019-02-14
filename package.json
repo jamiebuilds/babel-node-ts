@@ -1,0 +1,27 @@
+{
+  "name": "babel-node-ts",
+  "version": "0.0.0",
+  "description": "Run babel-node with --extensions ts,tsx by default",
+  "bin": "cli.js",
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "babel",
+    "babel-node",
+    "cli",
+    "typescript",
+    "ts",
+    "tsx",
+    "extensions"
+  ],
+  "author": "Jamie Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@babel/node": "^7.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2"
+  }
+}

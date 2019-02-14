@@ -1,0 +1,3 @@
+interface Props {
+  foo: boolean
+}
