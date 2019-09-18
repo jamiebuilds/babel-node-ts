@@ -13,5 +13,9 @@ proc.on("error", err => {
 })
 
 proc.on("close", code => {
-  process.exit(code)
+  if (signal) {
+    process.kill(process.pid, signal);
+  } else {
+    process.exit(code);
+  }
 })
