@@ -12,7 +12,7 @@ proc.on("error", err => {
   process.exit(2)
 })
 
-proc.on("close", code => {
+proc.on("close", (code, signal) => {
   if (signal) {
     process.kill(process.pid, signal);
   } else {
